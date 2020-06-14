@@ -29,7 +29,7 @@ It demonstrates 2 different Aspects:
 * **Target object**: object being advised by one or more aspects. Also referred to as the advised object. Since Spring AOP is implemented using runtime proxies, this object will always be a proxied object.
 * **AOP proxy**: an object created by the AOP framework in order to implement the aspect contracts (advise method executions and so on). In the Spring Framework, an AOP proxy will be a JDK dynamic proxy or a CGLIB proxy.
 * **Weaving**: linking aspects with other application types or objects to create an advised object. This can be done at compile time (using the AspectJ compiler, for example), load time, or at runtime. Spring AOP, like other pure Java AOP frameworks, performs weaving at runtime.
-##### Types of advices
+#### Types of advices
 * **Before advice**: Advice that executes before a join point, but which does not have the ability to prevent execution flow proceeding to the join point (unless it throws an exception).
 * **After returning advice**: Advice to be executed after a join point completes normally: for example, if a method returns without throwing an exception.
 * **After throwing advice**: Advice to be executed if a method exits by throwing an exception.
